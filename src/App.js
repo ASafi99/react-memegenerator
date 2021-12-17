@@ -1,25 +1,17 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react"
+import Header from "./components/Header.js"
+import Meme from "./components/Meme.js"
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+
+/**
+ * Challenge: Build the Header component
+ */
+export default function App() {
+    return (
+        <section className="container mx-auto lg:max-w-screen-lg bg-white rounded-lg mt-10">
+           <Header />
+           <Meme /> 
+        </section>
+        
+    )
 }
-
-export default App;
